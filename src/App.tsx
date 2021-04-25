@@ -12,7 +12,8 @@ const App: React.FC = () => {
   return (
     <div style={myStyles}>
       <h1>{state.userName}</h1>
-      <img src={state.imageUrl} alt="" />
+      <img src={state.imageUrl} alt="" /><br/>
+      <button onClick={() => setState({ ...state, userName: 'Mary' })}>Change the name</button>
     </div>
   );
 }
